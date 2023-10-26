@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School of Computer Studies</title>
+ <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+  list-style: none;
+       list-style-type: none;
+        display: flex;
+        flex-direction: column;
+  text-decoration:none;
+  color: rgb(29, 201, 231);
+}
+ </style>
+</head>
+<body>
+  <div class="container">
+    <h2>RVS CAS Admission Form</h2>
+    <form action="submit_form.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="name"> School of Computer Studies:</label>
+      <select name="COURSE">
+       <option value="radio" name="crust" value="Computer Science">Computer Science
+        <option value="radio" name="crust" value="MBA" checked>B.SC Data Science
+        <option value="radio" name="crust" value="MSW">BCA
+        <option value="radio" name="crust" value="MSW">B.SC Information Technology
+        <option value="radio" name="crust" value="MSW">M.SC Computer Science
+         <option value="radio" name="crust" value="MSW">MCA
+         </select><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="number">Phone:</label>
+      <input type="number" id="phone" name="phone" required>
+      <label for="qualification">Qualification:</label>
+      <input type="text" id="qualification" name="qualification" required>
+      
+      <button type="submit"><li><a href="./submited.html">Submited</a></li></button>
+    </form>
+  </div>
+</body>
+</html>
